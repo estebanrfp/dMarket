@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>dMarket — a GenosDB × Polygon marketplace mirror</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- ethers v6 UMD (global window.ethers) — the same version OVGrid ships. -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.13.1/ethers.umd.min.js"></script>
+</head>
+<body>
+  <!-- Shell mirrors OVGrid's marketplace: header · sidebar · subheader · main grid. -->
+  <div class="marketplace-app">
+    <header class="mp-header">
+      <div class="mp-header-left">
+        <div class="mp-logo"><span class="mp-logo-mark">◈</span> dMarket</div>
+        <div class="mp-search">
+          <svg class="mp-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" />
+          </svg>
+          <input class="mp-search-input" id="search" type="text" placeholder="Search assets…" />
+        </div>
+      </div>
+
+      <nav class="mp-nav-tabs" id="tabs">
+        <button class="mp-nav-tab active" data-tab="market">Marketplace</button>
+        <button class="mp-nav-tab" data-tab="inventory">Inventory</button>
+        <button class="mp-nav-tab" data-tab="offers">Offers</button>
+      </nav>
+
+      <div class="mp-header-right">
+        <button class="mp-header-icon" id="refresh" title="Sync from chain">⟳</button>
+        <div id="wallet"></div>
+      </div>
+    </header>
+
+    <aside class="mp-sidebar">
+      <h3 class="mp-sidebar-title">Filters</h3>
+      <div class="mp-filter-block" id="category-block" hidden>
+        <div class="mp-filter-heading">Category</div>
+        <div class="mp-rarity-filters" id="category-filters"></div>
+      </div>
+      <div class="mp-filter-block">
+        <div class="mp-filter-heading">Network</div>
+        <div class="mp-pills">
+          <button class="mp-pill mp-pill-active">Amoy</button>
+          <button class="mp-pill" disabled>Mainnet</button>
+        </div>
+      </div>
+      <a class="mp-sidebar-link" href="https://github.com/estebanrfp/ovgrid" target="_blank" rel="noopener">
+        Built from OVGrid ↗
+      </a>
+    </aside>
+
+    <div class="mp-subheader">
+      <div class="mp-subheader-left">
+        <span class="mp-result-count" id="count">0 items</span>
+      </div>
+      <div class="mp-subheader-right">
+        <select class="mp-select" id="sort">
+          <option value="recent">Recently listed</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+
+    <main class="mp-main">
+      <div class="mp-grid-container">
+        <div class="mp-card-grid" id="grid"></div>
+        <div class="mp-empty-state" id="empty" hidden>
+          <div class="mp-empty-icon">◈</div>
+          <div class="mp-empty-title">Nothing here yet</div>
+          <div class="mp-empty-text">Click the ⟳ button to mirror the live marketplace from chain.</div>
+        </div>
+      </div>
+      <button class="mp-fab" id="mint-fab" title="Mint asset">+</button>
+    </main>
+  </div>
+
+  <div class="mp-toast-container" id="toasts"></div>
+  <div id="modal-root"></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

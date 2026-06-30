@@ -1,0 +1,10 @@
+# OS / editor cruft
+.DS_Store
+*.log
+.vscode/
+.idea/
+
+# Local secrets (e.g. a Pinata JWT injected at runtime) — never commit
+config.local.js
+.env
+.env.local

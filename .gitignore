@@ -3,6 +3,7 @@
 *.log
 .vscode/
 .idea/
+.playwright-cli/
 
 # Local secrets (e.g. a Pinata JWT injected at runtime) — never commit
 config.local.js

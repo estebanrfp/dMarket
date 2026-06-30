@@ -4,6 +4,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) · Built from [OVGrid](https://github.com/estebanrfp/ovgrid) · Powered by [GenosDB](https://github.com/estebanrfp/gdb) · Vanilla ESM, no build
 
+![dMarket — a GenosDB × Polygon marketplace mirror](assets/preview.gif)
+
 dMarket is a **faithful, standalone extraction** of the blockchain layer that powers
 [**OVGrid**](https://github.com/estebanrfp/ovgrid) (the serverless 3-D virtual world).
 It talks to the **same upgradeable contracts OVGrid runs in production on Polygon**, and

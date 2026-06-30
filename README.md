@@ -4,6 +4,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) · Built from [OVGrid](https://github.com/estebanrfp/ovgrid) · Powered by [GenosDB](https://github.com/estebanrfp/gdb) · Vanilla ESM, no build
 
+**▶ Play it live — [estebanrfp.github.io/dMarket](https://estebanrfp.github.io/dMarket/)** · runs entirely in the browser, no install. Browsing needs no wallet; trading uses the Polygon Amoy testnet.
+
 ![dMarket — a GenosDB × Polygon marketplace mirror](assets/preview.gif)
 
 dMarket is a **faithful, standalone extraction** of the blockchain layer that powers

@@ -6,7 +6,7 @@
  * contracts OVGrid runs in production, so every integration pattern shown
  * here is the real one — not a mock. Default network: Polygon Amoy testnet.
  *
- * @see https://github.com/estebanrfp/ovgrid
+ * @see https://github.com/estebanrfp/webgpu-planetary-world
  */
 
 /** Active network: Polygon Amoy testnet (POL is the native gas currency). */

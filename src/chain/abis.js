@@ -6,7 +6,7 @@
  * read; the complete ABIs (auctions, bundles, rentals, royalties, governance)
  * live in the OVGrid repo.
  *
- * @see https://github.com/estebanrfp/ovgrid/blob/main/lib/blockchain/contracts.js
+ * @see https://github.com/estebanrfp/webgpu-planetary-world/blob/main/lib/blockchain/contracts.js
  */
 
 /** OVGAssets — ERC-1155 multi-token. */

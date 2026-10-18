@@ -2,14 +2,14 @@
 
 > **A live blockchain marketplace, mirrored into [GenosDB](https://github.com/estebanrfp/gdb) — reactive, peer-to-peer, offline-capable, with no backend server.**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) · Built from [OVGrid](https://github.com/estebanrfp/ovgrid) · Powered by [GenosDB](https://github.com/estebanrfp/gdb) · Vanilla ESM, no build
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) · Built from [OVGrid](https://github.com/estebanrfp/webgpu-planetary-world) · Powered by [GenosDB](https://github.com/estebanrfp/gdb) · Vanilla ESM, no build
 
 **▶ Play it live — [estebanrfp.github.io/dMarket](https://estebanrfp.github.io/dMarket/)** · runs entirely in the browser, no install. Browsing needs no wallet; trading uses the Polygon Amoy testnet.
 
 ![dMarket — a GenosDB × Polygon marketplace mirror](assets/preview.gif)
 
 dMarket is a **faithful, standalone extraction** of the blockchain layer that powers
-[**OVGrid**](https://github.com/estebanrfp/ovgrid) (the serverless 3-D virtual world).
+[**OVGrid**](https://github.com/estebanrfp/webgpu-planetary-world) (the serverless 3-D virtual world).
 It talks to the **same upgradeable contracts OVGrid runs in production on Polygon**, and
 demonstrates the one pattern most blockchain front-ends get wrong:
 
@@ -27,7 +27,7 @@ developer can copy a working pattern instead of reinventing it.
 > ~1,600 readable lines with **no build step**, scoped to **mint · list · buy · offer**.
 > The production implementation — timed auctions, bundles, rentals, royalties, global
 > offers, analytics, gasless meta-tx and a whole 3-D world — lives in
-> [OVGrid](https://github.com/estebanrfp/ovgrid). **Read dMarket to learn the pattern;
+> [OVGrid](https://github.com/estebanrfp/webgpu-planetary-world). **Read dMarket to learn the pattern;
 > study OVGrid to see it at full scale.**
 
 ---
@@ -151,7 +151,7 @@ code is the real thing. That fidelity comes with the contracts' real access rule
 > **None of this limits the GenosDB demonstration**, which is the read/mirror/identity layer
 > and works for everyone. The write paths are included as *faithful, real* reference code —
 > point them at your own contracts and the full `mint → list → buy → offer` loop is yours.
-> See it all running end-to-end in **[OVGrid](https://github.com/estebanrfp/ovgrid)**.
+> See it all running end-to-end in **[OVGrid](https://github.com/estebanrfp/webgpu-planetary-world)**.
 
 ---
 
@@ -193,8 +193,8 @@ FAB). Studying dMarket's front end *is* studying OVGrid's marketplace — scoped
 buy / list / mint / offer. The breadth OVGrid adds on top (auctions, bundles, rentals,
 analytics, the land map) stays in OVGrid by design.
 
-▶ **See it live in a full 3-D world:** [world.ovgrid.com](https://world.ovgrid.com/) ·
-[OVGrid on GitHub](https://github.com/estebanrfp/ovgrid)
+▶ **See it live in a full 3-D world:** [estebanrfp.github.io/webgpu-planetary-world](https://estebanrfp.github.io/webgpu-planetary-world/) ·
+[OVGrid on GitHub](https://github.com/estebanrfp/webgpu-planetary-world)
 
 ## Learn GenosDB
 
